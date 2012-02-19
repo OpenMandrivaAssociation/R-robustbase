@@ -13,6 +13,8 @@ Requires:         R-stats R-graphics R-methods
 Requires:         R-MASS R-lattice R-boot R-MPV R-xtable R-ggplot2 R-RColorBrewer 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-graphics R-methods
 BuildRequires:    R-MASS R-lattice R-boot R-MPV R-xtable R-ggplot2 R-RColorBrewer 
+BuildRequires:    blas-devel
+BuildRequires:    lapack-devel
 
 %description
 "Essential" Robust Statistics.  The goal is to provide tools allowing to
