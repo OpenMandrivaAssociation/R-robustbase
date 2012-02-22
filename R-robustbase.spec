@@ -9,10 +9,11 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.8-0.tar.gz
-Requires:         R-stats R-graphics R-methods 
-Requires:         R-MASS R-lattice R-boot R-MPV R-xtable R-ggplot2 R-RColorBrewer 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-graphics R-methods
-BuildRequires:    R-MASS R-lattice R-boot R-MPV R-xtable R-ggplot2 R-RColorBrewer 
+Requires:         R-stats R-graphics R-methods R-MASS R-lattice R-boot
+Requires:         R-MPV R-xtable R-ggplot2 R-RColorBrewer
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-stats R-graphics R-methods R-MASS R-lattice R-boot
+BuildRequires:    R-MPV R-xtable R-ggplot2 R-RColorBrewer
 BuildRequires:    blas-devel
 BuildRequires:    lapack-devel
 
