@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.8_0
+Version:          0.9.7
 Release:          1
 Summary:          Basic Robust Statistics
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.8-0.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/robustbase_0.9-7.tar.gz
 Requires:         R-stats R-graphics R-methods R-MASS R-lattice R-boot
 Requires:         R-MPV R-xtable R-ggplot2 R-RColorBrewer
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex
@@ -53,3 +53,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/*.R
+
