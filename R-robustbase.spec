@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.8_0
-Release:          1
+Release:          2
 Summary:          Basic Robust Statistics
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
