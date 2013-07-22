@@ -57,7 +57,6 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
 %{rlibdir}/%{packname}/xtraR
-%{rlibdir}/%{packname}/*.R
 
 
 %changelog
