@@ -1,21 +1,24 @@
 %global packname  robustbase
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          0.8_0
-Release:          2
+Version:          0.9.7
+Release:          1
 Summary:          Basic Robust Statistics
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_0.8-0.tar.gz
-Requires:         R-stats R-graphics R-methods R-MASS R-lattice R-boot
-Requires:         R-MPV R-xtable R-ggplot2 R-RColorBrewer
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-stats R-graphics R-methods R-MASS R-lattice R-boot
-BuildRequires:    R-MPV R-xtable R-ggplot2 R-RColorBrewer
+Source0:          http://cran.r-project.org/src/contrib/robustbase_0.9-7.tar.gz
+Requires:         R-stats R-graphics R-methods 
+Requires:         R-MASS R-lattice R-boot R-MPV R-xtable R-ggplot2 R-RColorBrewer 
+Requires:         R-reshape2
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-stats R-graphics R-methods
+BuildRequires:    R-MASS R-lattice R-boot R-MPV R-xtable R-ggplot2 R-RColorBrewer 
 BuildRequires:    blas-devel
 BuildRequires:    lapack-devel
+BuildRequires:    R-reshape2
 
 %description
 "Essential" Robust Statistics.  The goal is to provide tools allowing to
@@ -50,6 +53,17 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/data
+%{rlibdir}/%{packname}/external
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+%{rlibdir}/%{packname}/xtraR
 %{rlibdir}/%{packname}/*.R
+
+
+%changelog
+* Sun Feb 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.8_0-1
++ Revision: 777165
+- Import R-robustbase
+- Import R-robustbase
+
+
